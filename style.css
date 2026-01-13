@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+body.light {
+  background: #f8fafc;
+  color: #020617;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.slides {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100vh;
+  padding: 80px 10%;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+h1 span {
+  color: #38bdf8;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.tagline {
+  margin: 10px 0 20px;
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+/* Skills */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.skills span {
+  padding: 15px;
+  background: rgba(56,189,248,0.15);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-track {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project {
+  display: none;
+}
+
+.project.active {
+  display: block;
+}
+
+.carousel button {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Nav buttons */
+.nav-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-buttons button {
+  margin: 5px 0;
+  padding: 8px;
+  cursor: pointer;
+}
